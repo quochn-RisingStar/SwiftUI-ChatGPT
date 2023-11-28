@@ -1,0 +1,41 @@
+stages:
+  - Lint
+  - Build
+  - Test
+
+variables:
+  LANG: "en_US.UTF-8"
+
+before_script:
+  - xcodegen generate
+  - gem install bundler
+  - bundle install
+  - gem install cocoapods
+  - bundle exec pod install
+
+lint:
+  stage: Lint
+  script: 
+    - bundle exec fastlane lint
+  tags:
+    - ios
+  only:
+    - merge_requests
+
+buid:
+  stage: Build
+  script:
+    - bundle exec fastlane build
+  tags:
+    - ios
+  only:
+    - merge_requests
+
+# test:
+#   stage: Test
+#   script:
+#     - bundle exec fastlane tests
+#   tags:
+#     - ios
+#   only:
+#     - merge_requests

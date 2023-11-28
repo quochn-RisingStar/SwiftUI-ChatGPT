@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0002DB6DA060EF7F2408AC82 /* Pods_ChatGPT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F380165335F298C9CB0EBF /* Pods_ChatGPT.framework */; };
+		2DA5E0C01FD82334C66CCCB9 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCCBF9DBBFCF583DAC3361 /* MessageView.swift */; };
+		3F112DEF044CF4D917632300 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9330C9100D14B52BBEC328 /* ContentView.swift */; };
+		54D2853F2B20143B007E1FEB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D2853E2B20143B007E1FEB /* XCTest.framework */; };
+		6FACF12E851911906932D66A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91688A832DD261AF3D02F140 /* Constants.swift */; };
+		715ECE1CD9217A206424AB74 /* ChatGPTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ECDF2E9B812B2DA19C39EB /* ChatGPTUITestsLaunchTests.swift */; };
+		719FE10B471F507EDB3D0215 /* ChatGPTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D4B43241ABC8D2F2C80D24 /* ChatGPTUITests.swift */; };
+		78B6D8D27F508CCE13FB05FB /* Pods_ChatGPT_ChatGPTUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD72CF83BF3FA5E356C4B495 /* Pods_ChatGPT_ChatGPTUITests.framework */; };
+		7F37A0F4AE8A4570F23DFE41 /* LoadingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6100360D41B3B4A4F46775DE /* LoadingDots.swift */; };
+		8CB8652E2F03DA7BF243D49B /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36349E0AC6E017385B644E5F /* OpenAIService.swift */; };
+		8EAE35DCC90833DBAE71BBCA /* ChatMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E821FB2750508A6AA00034D /* ChatMessageModel.swift */; };
+		95C437CEA3ECF482563321EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A3561D0903E1337D60117D /* Assets.xcassets */; };
+		AA071028665DD0F0FA8D229A /* ChatGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8E9EFE4A48880BFA5CA2A8 /* ChatGPTApp.swift */; };
+		C0DC56737949A2C490C7237C /* Pods_ChatGPTTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E252599A0863572F6568D706 /* Pods_ChatGPTTests.framework */; };
+		D76D93120FE626E9E0680A61 /* ChatGPTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB883ADFF4CBAA6E31BB320 /* ChatGPTTests.swift */; };
+		E7E5F51D04ED7F90BC5C9373 /* OpenAICompletionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCADE4B6776FF03D1D4B78ED /* OpenAICompletionsModel.swift */; };
+		EBFBC2D128C6336DA54419C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96D9ADB38C73BBD14CB648F /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A9330C9100D14B52BBEC328 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1C71258135D158FADE703D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1E821FB2750508A6AA00034D /* ChatMessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageModel.swift; sourceTree = "<group>"; };
+		21845C7072FEE3D8D8F60906 /* Pods-ChatGPT.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGPT.staging.xcconfig"; path = "Target Support Files/Pods-ChatGPT/Pods-ChatGPT.staging.xcconfig"; sourceTree = "<group>"; };
+		24CCCBF9DBBFCF583DAC3361 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		36349E0AC6E017385B644E5F /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		4F8E9EFE4A48880BFA5CA2A8 /* ChatGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTApp.swift; sourceTree = "<group>"; };
+		54D2853D2B201209007E1FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		54D2853E2B20143B007E1FEB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5E62D6FE5233C8B9EE5B2AE0 /* Pods-ChatGPT-ChatGPTUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGPT-ChatGPTUITests.release.xcconfig"; path = "Target Support Files/Pods-ChatGPT-ChatGPTUITests/Pods-ChatGPT-ChatGPTUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5EB883ADFF4CBAA6E31BB320 /* ChatGPTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTTests.swift; sourceTree = "<group>"; };
+		609CE0E26299A1E09797F02D /* ChatGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6100360D41B3B4A4F46775DE /* LoadingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDots.swift; sourceTree = "<group>"; };
+		6BB79A7E1AA538CD231611E9 /* Pods-ChatGPTTests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGPTTests.staging.xcconfig"; path = "Target Support Files/Pods-ChatGPTTests/Pods-ChatGPTTests.staging.xcconfig"; sourceTree = "<group>"; };
+		7E26C868E2620B0380BB256B /* Pods-ChatGPT-ChatGPTUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGPT-ChatGPTUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChatGPT-ChatGPTUITests/Pods-ChatGPT-ChatGPTUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8044EC3E8FC70C713194A1A1 /* Pods-ChatGPTTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGPTTests.release.xcconfig"; path = "Target Support Files/Pods-ChatGPTTests/Pods-ChatGPTTests.release.xcconfig"; sourceTree = "<group>"; };
+		86D4B43241ABC8D2F2C80D24 /* ChatGPTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTUITests.swift; sourceTree = "<group>"; };
+		91688A832DD261AF3D02F140 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		92A3561D0903E1337D60117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95F380165335F298C9CB0EBF /* Pods_ChatGPT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatGPT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCADE4B6776FF03D1D4B78ED /* OpenAICompletionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAICompletionsModel.swift; sourceTree = "<group>"; };
+		C47ACFE187624CC8ACF83A7A /* Pods-ChatGPT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGPT.debug.xcconfig"; path = "Target Support Files/Pods-ChatGPT/Pods-ChatGPT.debug.xcconfig"; sourceTree = "<group>"; };
+		C96D9ADB38C73BBD14CB648F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0ECDF2E9B812B2DA19C39EB /* ChatGPTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D83E58C713E4D3F7DC9506AC /* Pods-ChatGPTTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGPTTests.debug.xcconfig"; path = "Target Support Files/Pods-ChatGPTTests/Pods-ChatGPTTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E21CE39F4D45228F956C4AFA /* ChatGPTTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E252599A0863572F6568D706 /* Pods_ChatGPTTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatGPTTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F48889C37B294C6EDEE808E3 /* ChatGPTUITests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTUITests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4EDB000FFDDD810DEA0D296 /* Pods-ChatGPT-ChatGPTUITests.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGPT-ChatGPTUITests.staging.xcconfig"; path = "Target Support Files/Pods-ChatGPT-ChatGPTUITests/Pods-ChatGPT-ChatGPTUITests.staging.xcconfig"; sourceTree = "<group>"; };
+		FB13442C3745801F1F497276 /* Pods-ChatGPT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatGPT.release.xcconfig"; path = "Target Support Files/Pods-ChatGPT/Pods-ChatGPT.release.xcconfig"; sourceTree = "<group>"; };
+		FD72CF83BF3FA5E356C4B495 /* Pods_ChatGPT_ChatGPTUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatGPT_ChatGPTUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58F362C90D1FE991DF99EC2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0DC56737949A2C490C7237C /* Pods_ChatGPTTests.framework in Frameworks */,
+				54D2853F2B20143B007E1FEB /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B89FD803B7C7A1D83F1EFA1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0002DB6DA060EF7F2408AC82 /* Pods_ChatGPT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF23B2D95B28BC34975DE75A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78B6D8D27F508CCE13FB05FB /* Pods_ChatGPT_ChatGPTUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0221FB0D588998FEF9EB053E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E821FB2750508A6AA00034D /* ChatMessageModel.swift */,
+				BCADE4B6776FF03D1D4B78ED /* OpenAICompletionsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B43EC9C5D73966016F4866A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54D2853E2B20143B007E1FEB /* XCTest.framework */,
+				95F380165335F298C9CB0EBF /* Pods_ChatGPT.framework */,
+				FD72CF83BF3FA5E356C4B495 /* Pods_ChatGPT_ChatGPTUITests.framework */,
+				E252599A0863572F6568D706 /* Pods_ChatGPTTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A941B557FA9F5DEBA8ACC95 = {
+			isa = PBXGroup;
+			children = (
+				AE48FC8CAF5517B8CF00B63A /* ChatGPT */,
+				F50BE191A3D7820F79EDC464 /* ChatGPTTests */,
+				F6622533A17918EC95B5C3A0 /* ChatGPTUITests */,
+				C81A8A096B5FAF56A521829C /* Products */,
+				AA6741365BE1ABB043E74F98 /* Pods */,
+				2B43EC9C5D73966016F4866A /* Frameworks */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		A3F4269C0164C657AB8D8E0A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C96D9ADB38C73BBD14CB648F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA6741365BE1ABB043E74F98 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C47ACFE187624CC8ACF83A7A /* Pods-ChatGPT.debug.xcconfig */,
+				FB13442C3745801F1F497276 /* Pods-ChatGPT.release.xcconfig */,
+				21845C7072FEE3D8D8F60906 /* Pods-ChatGPT.staging.xcconfig */,
+				7E26C868E2620B0380BB256B /* Pods-ChatGPT-ChatGPTUITests.debug.xcconfig */,
+				5E62D6FE5233C8B9EE5B2AE0 /* Pods-ChatGPT-ChatGPTUITests.release.xcconfig */,
+				F4EDB000FFDDD810DEA0D296 /* Pods-ChatGPT-ChatGPTUITests.staging.xcconfig */,
+				D83E58C713E4D3F7DC9506AC /* Pods-ChatGPTTests.debug.xcconfig */,
+				8044EC3E8FC70C713194A1A1 /* Pods-ChatGPTTests.release.xcconfig */,
+				6BB79A7E1AA538CD231611E9 /* Pods-ChatGPTTests.staging.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE48FC8CAF5517B8CF00B63A /* ChatGPT */ = {
+			isa = PBXGroup;
+			children = (
+				0221FB0D588998FEF9EB053E /* Model */,
+				A3F4269C0164C657AB8D8E0A /* Preview Content */,
+				92A3561D0903E1337D60117D /* Assets.xcassets */,
+				1C71258135D158FADE703D2B /* Info.plist */,
+				4F8E9EFE4A48880BFA5CA2A8 /* ChatGPTApp.swift */,
+				91688A832DD261AF3D02F140 /* Constants.swift */,
+				0A9330C9100D14B52BBEC328 /* ContentView.swift */,
+				6100360D41B3B4A4F46775DE /* LoadingDots.swift */,
+				24CCCBF9DBBFCF583DAC3361 /* MessageView.swift */,
+				36349E0AC6E017385B644E5F /* OpenAIService.swift */,
+			);
+			path = ChatGPT;
+			sourceTree = "<group>";
+		};
+		C81A8A096B5FAF56A521829C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				609CE0E26299A1E09797F02D /* ChatGPT.app */,
+				E21CE39F4D45228F956C4AFA /* ChatGPTTests.app */,
+				F48889C37B294C6EDEE808E3 /* ChatGPTUITests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F50BE191A3D7820F79EDC464 /* ChatGPTTests */ = {
+			isa = PBXGroup;
+			children = (
+				54D2853D2B201209007E1FEB /* Info.plist */,
+				5EB883ADFF4CBAA6E31BB320 /* ChatGPTTests.swift */,
+			);
+			path = ChatGPTTests;
+			sourceTree = "<group>";
+		};
+		F6622533A17918EC95B5C3A0 /* ChatGPTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				86D4B43241ABC8D2F2C80D24 /* ChatGPTUITests.swift */,
+				D0ECDF2E9B812B2DA19C39EB /* ChatGPTUITestsLaunchTests.swift */,
+			);
+			path = ChatGPTUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CB101DED6DE5040101F1D20 /* ChatGPTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6953542C8713C10FD0D620E7 /* Build configuration list for PBXNativeTarget "ChatGPTUITests" */;
+			buildPhases = (
+				9D3D937FCFC81BB5F255BF92 /* [CP] Check Pods Manifest.lock */,
+				D0C0F8BB0AB2BB702B12909F /* Sources */,
+				BF23B2D95B28BC34975DE75A /* Frameworks */,
+				EB27A1897557FAB061AE1C47 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatGPTUITests;
+			productName = ChatGPTUITests;
+			productReference = F48889C37B294C6EDEE808E3 /* ChatGPTUITests.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77CCC21EAF73093779C92AC7 /* ChatGPTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AC4384EFBC7D8D2C610EB0 /* Build configuration list for PBXNativeTarget "ChatGPTTests" */;
+			buildPhases = (
+				9FC4E01EE77AFFADDBB3159C /* [CP] Check Pods Manifest.lock */,
+				03D51164903B7E83C8247EA3 /* Sources */,
+				58F362C90D1FE991DF99EC2B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatGPTTests;
+			productName = ChatGPTTests;
+			productReference = E21CE39F4D45228F956C4AFA /* ChatGPTTests.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83F6C10CC4EFDD12BAA586FF /* ChatGPT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58670811AD98D66845C45359 /* Build configuration list for PBXNativeTarget "ChatGPT" */;
+			buildPhases = (
+				EEE7CD9F429E35D3C52F1BCD /* [CP] Check Pods Manifest.lock */,
+				79AC16D5BF7671E8A050E1C6 /* Sources */,
+				4CD9A0C3FDFD99EFB6736ADA /* Resources */,
+				B89FD803B7C7A1D83F1EFA1F /* Frameworks */,
+				F78995195512BB7A78A16D1F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatGPT;
+			productName = ChatGPT;
+			productReference = 609CE0E26299A1E09797F02D /* ChatGPT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		640ACDC3FBDCD797F7F5BE01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					2CB101DED6DE5040101F1D20 = {
+						ProvisioningStyle = Auto;
+					};
+					77CCC21EAF73093779C92AC7 = {
+						ProvisioningStyle = Auto;
+					};
+					83F6C10CC4EFDD12BAA586FF = {
+						ProvisioningStyle = Auto;
+					};
+				};
+			};
+			buildConfigurationList = 9B45439338F2EA022D6FDABC /* Build configuration list for PBXProject "ChatGPT" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9A941B557FA9F5DEBA8ACC95;
+			productRefGroup = C81A8A096B5FAF56A521829C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83F6C10CC4EFDD12BAA586FF /* ChatGPT */,
+				77CCC21EAF73093779C92AC7 /* ChatGPTTests */,
+				2CB101DED6DE5040101F1D20 /* ChatGPTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CD9A0C3FDFD99EFB6736ADA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95C437CEA3ECF482563321EC /* Assets.xcassets in Resources */,
+				EBFBC2D128C6336DA54419C0 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9D3D937FCFC81BB5F255BF92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatGPT-ChatGPTUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FC4E01EE77AFFADDBB3159C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatGPTTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB27A1897557FAB061AE1C47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatGPT-ChatGPTUITests/Pods-ChatGPT-ChatGPTUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatGPT-ChatGPTUITests/Pods-ChatGPT-ChatGPTUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatGPT-ChatGPTUITests/Pods-ChatGPT-ChatGPTUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEE7CD9F429E35D3C52F1BCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChatGPT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F78995195512BB7A78A16D1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatGPT/Pods-ChatGPT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChatGPT/Pods-ChatGPT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatGPT/Pods-ChatGPT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03D51164903B7E83C8247EA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76D93120FE626E9E0680A61 /* ChatGPTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79AC16D5BF7671E8A050E1C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA071028665DD0F0FA8D229A /* ChatGPTApp.swift in Sources */,
+				8EAE35DCC90833DBAE71BBCA /* ChatMessageModel.swift in Sources */,
+				6FACF12E851911906932D66A /* Constants.swift in Sources */,
+				3F112DEF044CF4D917632300 /* ContentView.swift in Sources */,
+				7F37A0F4AE8A4570F23DFE41 /* LoadingDots.swift in Sources */,
+				2DA5E0C01FD82334C66CCCB9 /* MessageView.swift in Sources */,
+				E7E5F51D04ED7F90BC5C9373 /* OpenAICompletionsModel.swift in Sources */,
+				8CB8652E2F03DA7BF243D49B /* OpenAIService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C0F8BB0AB2BB702B12909F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				719FE10B471F507EDB3D0215 /* ChatGPTUITests.swift in Sources */,
+				715ECE1CD9217A206424AB74 /* ChatGPTUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2DB6698CF8FB60A04010C56F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E62D6FE5233C8B9EE5B2AE0 /* Pods-ChatGPT-ChatGPTUITests.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Auto;
+				ENABLE_TESTABILITY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quochn.$(PRODUCT_NAME:rfc1034identifier)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2E8C1C1C224D8866CF7C20CB /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4EDB000FFDDD810DEA0D296 /* Pods-ChatGPT-ChatGPTUITests.staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Auto;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quochn.$(PRODUCT_NAME:rfc1034identifier)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Staging;
+		};
+		46F2D208B5404F213FBD4C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quochn.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		478D93CB0FB57731E8AC8C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB13442C3745801F1F497276 /* Pods-ChatGPT.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Auto;
+				DEVELOPMENT_TEAM = NBRS9YH8A9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatGPT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quochn.$(PRODUCT_NAME:rfc1034identifier)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		70160B368CF21691ED18A037 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quochn.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Staging;
+		};
+		7669024408B993321A6EB60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8044EC3E8FC70C713194A1A1 /* Pods-ChatGPTTests.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Auto;
+				DEVELOPMENT_TEAM = 4V38K74UPM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatGPTTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quochn.$(PRODUCT_NAME:rfc1034identifier)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = NO;
+			};
+			name = Release;
+		};
+		C1065D0F1F1E95217BCB44D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D83E58C713E4D3F7DC9506AC /* Pods-ChatGPTTests.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Auto;
+				DEVELOPMENT_TEAM = 4V38K74UPM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatGPTTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quochn.$(PRODUCT_NAME:rfc1034identifier)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = NO;
+			};
+			name = Debug;
+		};
+		C3238FE5A16A10CABA82704A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E26C868E2620B0380BB256B /* Pods-ChatGPT-ChatGPTUITests.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Auto;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quochn.$(PRODUCT_NAME:rfc1034identifier)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CC22EB62EBDC756434C7B5FE /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21845C7072FEE3D8D8F60906 /* Pods-ChatGPT.staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Auto;
+				DEVELOPMENT_TEAM = NBRS9YH8A9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatGPT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quochn.$(PRODUCT_NAME:rfc1034identifier)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Staging;
+		};
+		DCD4A91FCA3EE9051AC11E13 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BB79A7E1AA538CD231611E9 /* Pods-ChatGPTTests.staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Auto;
+				DEVELOPMENT_TEAM = NBRS9YH8A9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatGPTTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quochn.$(PRODUCT_NAME:rfc1034identifier)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+				TREAT_MISSING_BASELINES_AS_TEST_FAILURES = NO;
+			};
+			name = Staging;
+		};
+		FBEF68C5EB395B25909C729B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quochn.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FDCAC6223039004EC7F1B2FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C47ACFE187624CC8ACF83A7A /* Pods-ChatGPT.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Auto;
+				DEVELOPMENT_TEAM = 4V38K74UPM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatGPT/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.quochn.$(PRODUCT_NAME:rfc1034identifier)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18AC4384EFBC7D8D2C610EB0 /* Build configuration list for PBXNativeTarget "ChatGPTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1065D0F1F1E95217BCB44D9 /* Debug */,
+				7669024408B993321A6EB60C /* Release */,
+				DCD4A91FCA3EE9051AC11E13 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		58670811AD98D66845C45359 /* Build configuration list for PBXNativeTarget "ChatGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDCAC6223039004EC7F1B2FD /* Debug */,
+				478D93CB0FB57731E8AC8C14 /* Release */,
+				CC22EB62EBDC756434C7B5FE /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6953542C8713C10FD0D620E7 /* Build configuration list for PBXNativeTarget "ChatGPTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3238FE5A16A10CABA82704A /* Debug */,
+				2DB6698CF8FB60A04010C56F /* Release */,
+				2E8C1C1C224D8866CF7C20CB /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9B45439338F2EA022D6FDABC /* Build configuration list for PBXProject "ChatGPT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46F2D208B5404F213FBD4C21 /* Debug */,
+				FBEF68C5EB395B25909C729B /* Release */,
+				70160B368CF21691ED18A037 /* Staging */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 640ACDC3FBDCD797F7F5BE01 /* Project object */;
+}

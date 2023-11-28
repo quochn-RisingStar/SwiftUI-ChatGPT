@@ -1,0 +1,89 @@
+name: ChatGPT
+
+configs:
+  Debug: debug
+  Staging: release
+  Release: release
+  
+options:
+  createIntermediateGroups: true
+  groupSortPosition: top
+  generateEmptyDirectories: true
+  indentWidth: 2
+  tabWidth: 2
+  bundleIdPrefix: "ChatGPT"
+
+settings:
+  PRODUCT_BUNDLE_IDENTIFIER: com.quochn.$(PRODUCT_NAME:rfc1034identifier)
+
+targets:
+  ChatGPT:
+    scheme:
+      gatherCoverageData: true
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources: [ChatGPT]
+    settings:
+      GENERATE_INFOPLIST_FILE: YES
+      SWIFT_VERSION: "5.5"
+      CODE_SIGN_STYLE: "Auto"
+      TARGETED_DEVICE_FAMILY: 1
+      DEVELOPMENT_TEAM: "NBRS9YH8A9"
+      PRODUCT_BUNDLE_IDENTIFIER: com.quochn.$(PRODUCT_NAME:rfc1034identifier)
+    
+  ChatGPTTests:
+    scheme:
+      gatherCoverageData: true
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources: [ChatGPTTests]
+    settings:
+      GENERATE_INFOPLIST_FILE: YES
+      SWIFT_VERSION: "5.5" # Updated Swift version to 5.5
+      CODE_SIGN_STYLE: "Auto"
+      TARGETED_DEVICE_FAMILY: 1
+      DEVELOPMENT_TEAM: "NBRS9YH8A9"
+      PRODUCT_BUNDLE_IDENTIFIER: com.quochn.$(PRODUCT_NAME:rfc1034identifier)
+
+  ChatGPTUITests:
+    scheme:
+      gatherCoverageData: true
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources: [ChatGPTUITests]
+    settings:
+      GENERATE_INFOPLIST_FILE: YES
+      SWIFT_VERSION: "5.5" # Updated Swift version to 5.5
+      CODE_SIGN_STYLE: "Auto"
+      TARGETED_DEVICE_FAMILY: 1
+      PRODUCT_BUNDLE_IDENTIFIER: com.quochn.$(PRODUCT_NAME:rfc1034identifier)
+
+
+#    postCompileScripts:
+#        - name: Swiftlint
+#          script: |
+#            if which swiftlint >/dev/null; then
+#              swiftlint
+#            else
+#              echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+#            fi
+#        - name: GoogleServiceInfo
+#          script: |
+#            PATH_TO_GOOGLE_PLISTS="${PROJECT_DIR}/kagoshima/Supporting Files"
+#            case "${CONFIGURATION}" in
+#            "Debug" )
+#            cp -r "$PATH_TO_GOOGLE_PLISTS/GoogleService-Info.plist" "${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist" ;;
+#            "Release" )
+#            cp -r "$PATH_TO_GOOGLE_PLISTS/GoogleService-Info.plist" "${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist" ;;
+#            *)
+#            ;;
+#            esac
+#    postBuildScripts:
+#        - name: Crashlytics
+#          script: |
+#            ${PODS_ROOT}/FirebaseCrashlytics/run
+#          inputFiles:
+#            - $(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)
