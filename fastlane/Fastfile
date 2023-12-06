@@ -16,29 +16,32 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Description of what the lane does"
-  
-  lane :lint do
-    cocoapods
-    danger
+  desc "Run Build"
+  lane :build do
+    build_staging
   end
 
-  lane :build do
-    update_code_signing_settings(
-      use_automatic_signing: true,
-      path: "ChatGPT.xcodeproj",
-      bundle_identifier: "manuchim.ChatGPT"
-    )
-
-    xcodebuild(
-      xcodeproj: "ChatGPT.xcodeproj",
+  desc "Run Build Staging"
+  lane :build_staging do
+    build_app(
       scheme: "ChatGPT",
-      configuration: "Release",
       clean: true,
-      build: true,
       destination: "generic/platform=iOS",
+      configuration: "Staging",
+      skip_package_ipa: true,
+      skip_archive: true,
+      skip_codesigning: true
     )
-   end
+  end
+
+  desc "Run Test"
+  lane :test do
+    scan(
+      scheme: "ChatGPT",
+      configuration: "Debug",
+      code_coverage: true
+      )
+  end
 
   lane :tests do
     run_tests(workspace: "ChatGPT.xcworkspace",
