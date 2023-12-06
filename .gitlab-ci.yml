@@ -26,8 +26,6 @@ buid:
   stage: Build
   script:
     - bundle exec fastlane build
-  tags:
-    - ios
   only:
     - merge_requests
 
